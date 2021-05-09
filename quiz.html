@@ -1,0 +1,624 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+   
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Learning</title>
+     
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:black;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+
+
+
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">Learning Zone</a>
+  <div class="header-right">
+    <a class="active" href="{% url 'main:home' %}">Home</a>
+    <a href="#contact">About Us</a>
+    <a href="{% url 'main:Course' %}">Course</a>
+     <a href="#">Contact Us</a>
+      
+  </div>
+</div>
+
+<br>
+
+<center><h2 style="color: #3C9EEB; font-family: optima;">Quiz</h2></center>
+<div style="height: 250px; background-color: #708090; color: white;">
+    <hr>
+    <br>
+    <ul>
+        <ol>-- The quiz will comprise of Objective type Multiple Choice Questions (MCQs)</ol><br>
+<ol>-- All questions are compulsory and each carries One mark.</ol><br>
+<ol>-- The total number of questions will be different based on the course, the detail is available on your screen.</ol><br>
+<ol>-- There will be NO NEGATIVE MARKING for the wrong answers.
+</ol></ul>
+<br>
+<hr>
+
+</div>
+
+
+
+
+     <div style="background-color: #E6E6FA;">       
+ <div class="container">
+      <div class="row">
+
+       
+          <div class="akki">
+<p>
+
+<form name="quiz">
+
+<p>
+
+<b>Question 1.
+
+<br> Which of the following is the first operating system developed using C programming language?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="Windows">Windows<br>
+
+<input type="radio" name="q1" value="DOCS">DOCS<br>
+
+<input type="radio" name="q1" value="UNIX">UNIX<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 2.
+
+<br>The C compiler used for UNIX operating system is<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="cc">cc<br>
+
+<input type="radio" name="q2" value="gcc">gcc<br>
+
+<input type="radio" name="q2" value="vc++">vc++<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 3.
+
+<br>Which of the following is a logical AND operator?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="!">!<br>
+
+<input type="radio" name="q3" value="&&">&&<br>
+
+<input type="radio" name="q3" value="||">||<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 4.
+
+<br>C++ is a ___ type of language.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="Middle-level language">Middle-level language<br>
+
+<input type="radio" name="q4" value="High-level language">High-level language<br>
+
+<input type="radio" name="q4" value="Low-level language">Low-level language<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 5.
+
+<br>Which of the following is the address operator?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="@">@<br>
+
+<input type="radio" name="q5" value="#">#<br>
+
+<input type="radio" name="q5" value="#">&<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 6.
+
+<br>_____ is used to find and fix bugs in the Java programs.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q6" value="JVM">JVM<br>
+
+<input type="radio" name="q6" value="JRE">JRE<br>
+
+<input type="radio" name="q6" value="JDB">JDB<br>
+
+</blockquote>
+
+<p><b>
+
+Question 7.
+
+<br> Which of the following is not a Java features?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q7" value="Dynamic">Dynamic<br>
+
+<input type="radio" name="q7" value="Use of pointer">Use of pointer<br>
+
+<input type="radio" name="q7" value="Object-Oreinted">Object-Oreinted<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 8.
+
+<br>Which of the following element is responsible for making the text bold in HTML?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q8" value="br"> br<br>
+
+<input type="radio" name="q8" value="b"> b <br>
+
+<input type="radio" name="q8" value="pre"> pre <br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 9.
+
+<br>Which of the following operators is the correct option for power(ab)?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q9" value="a**b">a**b<br>
+
+<input type="radio" name="q9" value="a ^ ^ b">a ^ ^ b<br>
+
+<input type="radio" name="q9" value="a ^ * b">a ^ * b<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 10.
+
+<br>Which of the following is not a keyword in Python language?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q10" value="raise">raise<br>
+
+<input type="radio" name="q10" value="val">val<br>
+
+<input type="radio" name="q10" value="try">try<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 11.
+
+<br>What is the method inside the class in python language?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q11" value="attribute">attribute<br>
+
+<input type="radio" name="q11" value="function">function<br>
+
+<input type="radio" name="q11" value="object">object<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 12.
+
+<br>Which character is used in Python to make a single line comment?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q12" value="//">//<br>
+
+<input type="radio" name="q12" value="#">#<br>
+
+<input type="radio" name="q12" value="!">!<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 13.
+
+<br>Which one of the following is the correct extension of the Python file?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q13" value=".p">.p<br>
+
+<input type="radio" name="q13" value=".py">.py<br>
+
+<input type="radio" name="q13" value=".python">.python<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 14.
+
+<br>Who developed the Python language?.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q14" value="Niene Stom">Niene Stom<br>
+
+<input type="radio" name="q14" value="Guido van Rossum">Guido van Rossum<br>
+
+<input type="radio" name="q14" value="Zim Den">Zim Den<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 15.
+
+<br>Which data type cannot be checked in switch-case statement?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q15" value="enum">enum<br>
+
+<input type="radio" name="q15" value="interger">interger<br>
+
+<input type="radio" name="q15" value="float">float<br>
+
+
+</blockquote>
+</div>
+</div>
+</div>
+
+
+<p style="margin-left: 10%;"><b>
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p style="margin-left: 10%;">
+
+Number of score out of 15 = <input type= text size 15 name= "mark">
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+
+
+<p>
+
+
+<form method="post" name="Form" onsubmit="" action="">
+
+</form>
+
+
+</body>
+</div>
+
+
+<script>
+
+var numQues = 15;
+
+var numChoi = 3;
+
+var answers = new Array(15);
+
+answers[0] = "UNIX";
+
+answers[1] = "cc";
+
+answers[2] = "&&";
+
+answers[3] = "Middle-level language";
+
+answers[4] = "&";
+
+answers[5] = "JDB";
+
+answers[6] = "Use of pointer";
+
+answers[7] = "b";
+
+answers[8] = "a**b";
+
+answers[9] = "val";
+
+answers[10] = "function";
+
+answers[11] = "#";
+
+answers[12] = ".py";
+
+answers[13] = "Guido van Rossum";
+
+answers[14] = "float";
+
+function getScore(form) {
+
+var score = 0;
+
+var currElt;
+
+var currSelection;
+
+for (i=0; i<numQues; i++) {
+
+currElt = i*numChoi;
+
+answered=false;
+
+for (j=0; j<numChoi; j++) {
+
+currSelection = form.elements[currElt + j];
+
+if (currSelection.checked) {
+
+answered=true;
+
+if (currSelection.value == answers[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+
+}
+
+var scoreper = Math.round(score/numQues*100);
+
+form.percentage.value = scoreper + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+
+
+<div style="background-color:#F5F5F5;">
+  <br>
+  <br>
+ <footer id="footer"> 
+    <div class="container" >
+      <div class="row row-pb-md">
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>E-Learning</h4>
+         <p>
+            <a href="#"  style="color: #5D6D7E;">Course</a><br>   
+            <a href="#" style="color: #5D6D7E;">Blog</a><br>
+            <a href="#" style="color: #5D6D7E;">Contact</a><br>
+            <a href="#" style="color: #5D6D7E;">Social Media</a><br>
+            <a href="#" style="color: #5D6D7E;">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Useful Links</h4>
+         
+            <a href="#" style="color: #5D6D7E;">Held Desk</a>
+            <a href="#" style="color: #5D6D7E;">Facilities</a>
+            <a href="#" style="color: #5D6D7E;">Testimonials</a><br>
+            <a href="#" style="color: #5D6D7E;">Student Support</a>
+            <a href="#" style="color: #5D6D7E;">Terms &amp; Conditions</a>
+          
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Our Course</h4>
+          
+            <a href="#" style="color: #5D6D7E;">Machine Learning</a><br>
+            <a href="#" style="color: #5D6D7E;">Marketing</a><br>
+            <a href="#" style="color: #5D6D7E;">Visual Assistant</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">Web Development</a>
+          
+        </div>
+         <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Projects</h4>
+          
+             <a href="#" style="color: #5D6D7E;">Photography</a>  <br>           
+            <a href="#" style="color: #5D6D7E;">Virtual Assistance</a><br>
+            <a href="#" style="color: #5D6D7E;">Robotics</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">App Development</a>
+          
+        </div>
+       
+        <div class="col-md-3 col-sm-4 footer-widget">
+          <h4>Contact Info</h4>
+          <p>Ahmeadabad Gujarat-382330</p>
+          <p>+91 9723815269</p>
+          <p>E-mail: <a href="mailto:maheshrathod447@gmail.com" style="color: #5D6D7E;">maheshrathod447@gmail.com</a></p>
+        </div>
+      </div>
+      <br>
+
+      <div class="footer-widget" style=" margin-left: 45%;">
+                           
+                                    <a href="#" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i> </a>
+                              
+                                
+                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"> <i class="fab fa-linkedin"></i></i> </a>
+                        </div>
+
+                        <br>
+
+                        <hr>
+                        <br>
+
+             <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                       <p>© Copyright © 2021 Yourdomian. All rights reserved.</p>
+                    </div>
+                    </div>
+                    <br>
+
+
+
+                        
+
+
+
+
+      </div>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

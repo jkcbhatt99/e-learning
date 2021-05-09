@@ -1,0 +1,412 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+   
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Learning</title>
+     
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:black;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.gfg {
+            
+            position: relative;
+            height: 300px;
+        }
+  
+        .first-txt {
+            position: absolute;
+            top: 40%;
+            left: 10%;;
+      color:#CD5C5C;
+      font-weight:bold;
+    
+      
+        }
+    
+    .second-txt {
+    position: absolute;
+            top:40%;
+            left: 38%;;
+      color:#CD5C5C;
+      font-weight:bold;
+      
+  }
+
+   .sixth-txt {
+    position: absolute;
+            top:40%;
+            left: 72%;;
+      color:#CD5C5C;
+      font-weight:bold;
+    
+  }
+  
+  
+  .third-txt {
+       position: absolute;
+            top: 60%;
+            left: 15%;;
+      color:white;
+      font-weight:bold;
+    
+      
+  }
+
+  .fourth-txt {
+       position: absolute;
+            top: 60%;
+            left: 44%;;
+      color:white;
+      font-weight:bold;
+      
+      
+  }
+.fifth-txt {
+       position: absolute;
+            top: 60%;
+            left: 75%;;
+      color:white;
+      font-weight:bold;
+      
+      
+  }
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">Learning Zone</a>
+  <div class="header-right">
+    <a class="active" href="{% url 'main:home' %}">Home</a>
+    <a href="#contact">About Us</a>
+     <a href="#">Contact Us</a>
+      
+  </div>
+</div>
+
+<br>
+
+<center><h2 style="color: #3C9EEB; font-family: optima;">Trending Courses</h2></center>
+             
+
+               
+
+            <br>
+
+              <div class="row" style="margin-left: 10px;">
+               <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/web.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Web Development</h5>
+    <p class="card-text">Learn how to create a awesome Website.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/ML.png' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Machine Learning</h5>
+    <p class="card-text">Learn Machine Learning and take the first step towards AI.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+
+
+         <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Dm.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Digital Marketing</h5>
+    <p class="card-text">Learn SEO, Search Engine Marketing, Web Analytics.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Gd.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Graphic Design</h5>
+    <p class="card-text">Design Stunning graphics using Adobe Photoshop.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+
+
+      </div>
+
+
+
+
+      <br>
+
+              <div class="row" style="margin-left: 10px;">
+               <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/photo.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Photography</h5>
+    <p class="card-text">Learn how to create a awesome Website.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/cs.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Cyber Security</h5>
+    <p class="card-text">Learn Machine Learning and take the first step towards AI.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+
+
+         <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/robo.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Robotics</h5>
+    <p class="card-text">Learn SEO, Search Engine Marketing, Web Analytics.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/app.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Android Web Development</h5>
+    <p class="card-text">Design Stunning graphics using Adobe Photoshop.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+<br>
+
+<div class="gfg" style="background-color:#EEE8AA">
+       <h3 class="first-txt">
+             Access free Notes  </h3> <br>
+            
+
+   <h3 class="second-txt">Asssignments and tasks</h3>
+
+    <h3 class="sixth-txt">Practice Test</h3>
+               
+               
+         <h3 class="third-txt"><a href="{% url 'main:adminp' %}" class="btn btn-primary">Start Learn</a></h3>
+         <h3 class="fourth-txt"><a href="{% url 'main:assign' %}" class="btn btn-primary">Start Performing</a></h3>
+          <h3 class="fifth-txt"><a href="{% url 'main:quiz' %}" class="btn btn-primary">Start Quiz</a></h3>
+
+
+          
+          </div>
+
+
+
+
+
+
+
+
+<div style="background-color:#F5F5F5;">
+  <br>
+  <br>
+ <footer id="footer"> 
+    <div class="container" >
+      <div class="row row-pb-md">
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>E-Learning</h4>
+         <p>
+            <a href="#"  style="color: #5D6D7E;">Course</a><br>   
+            <a href="#" style="color: #5D6D7E;">Blog</a><br>
+            <a href="#" style="color: #5D6D7E;">Contact</a><br>
+            <a href="#" style="color: #5D6D7E;">Social Media</a><br>
+            <a href="#" style="color: #5D6D7E;">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Useful Links</h4>
+         
+            <a href="#" style="color: #5D6D7E;">Held Desk</a>
+            <a href="#" style="color: #5D6D7E;">Facilities</a>
+            <a href="#" style="color: #5D6D7E;">Testimonials</a><br>
+            <a href="#" style="color: #5D6D7E;">Student Support</a>
+            <a href="#" style="color: #5D6D7E;">Terms &amp; Conditions</a>
+          
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Our Course</h4>
+          
+            <a href="#" style="color: #5D6D7E;">Machine Learning</a><br>
+            <a href="#" style="color: #5D6D7E;">Marketing</a><br>
+            <a href="#" style="color: #5D6D7E;">Visual Assistant</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">Web Development</a>
+          
+        </div>
+         <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Projects</h4>
+          
+             <a href="#" style="color: #5D6D7E;">Photography</a>  <br>           
+            <a href="#" style="color: #5D6D7E;">Virtual Assistance</a><br>
+            <a href="#" style="color: #5D6D7E;">Robotics</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">App Development</a>
+          
+        </div>
+       
+        <div class="col-md-3 col-sm-4 footer-widget">
+          <h4>Contact Info</h4>
+          <p>Ahmeadabad Gujarat-382330</p>
+          <p>+91 9723815269</p>
+          <p>E-mail: <a href="mailto:maheshrathod447@gmail.com" style="color: #5D6D7E;">maheshrathod447@gmail.com</a></p>
+        </div>
+      </div>
+      <br>
+
+      <div class="footer-widget" style=" margin-left: 45%;">
+                           
+                                    <a href="#" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i> </a>
+                              
+                                
+                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"> <i class="fab fa-linkedin"></i></i> </a>
+                        </div>
+
+                        <br>
+
+                        <hr>
+                        <br>
+
+             <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                       <p>© Copyright © 2021 Yourdomian. All rights reserved.</p>
+                    </div>
+                    </div>
+                    <br>
+
+
+
+                        
+
+
+
+
+      </div>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+   
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>E-Learning</title>
+      <link rel="stylesheet" href="{% static 'css/index1.css' %}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+   
+ $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+</script>
+
+
+
+  
+
+
+
+
+
+   </head>
+   <body>
+      <div class="wrapper">
+         <header style=" background: url('{% static 'img/bg-home.jpg' %}') no-repeat 50% 50%; width: 100%;height: 100vh; background-size: cover;">
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  Learning Zone
+               </div>
+               <div class="menu">
+                  <ul class="standard_dropdown main_nav_dropdown">
+                     <li><a href="{% url 'main:home' %}">Home</a></li>
+                     <li><a href="#">About Us</a></li>
+                      <li><a href="{% url 'main:Course' %}">Course</a></li>
+                    <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li> <i class="fas fa-sign-out-alt"></i> <a href="{% url 'main:index1' %}">Logout</a></li>
+
+                       
+                  </ul>
+               </div>
+            </nav>
+            
+                 <h1 style="top: 50%;left: 50%;transform: translate(-50%, -50%); color: white;position: absolute;">Welcome {{user.username}}</h1>
+                        
+
+            <div class="centered"> The Best e-Learning Courses For Better World!<br>
+
+              
+
+               <br>
+               <br>
+             
+   
+               <center><a href="#" class="btn btn-primary">Get Start</a></center>
+
+               
+               </div>
+             
+            </div>
+
+            
+
+         </header>
+
+<br>
+        <hr>
+         
+<br>
+                            <center><h2 style="font-size: 20px;color: #79d279">Trending Courses</h2></center>
+              <center><h2>Popular Online Courses Around You</h2></center>
+               <center><h2 class="a">The ultimate planning solution for Students who want to reach their goals</h2></center>
+
+            <br>
+
+              <div class="row" style="margin-left: 10px;">
+               <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/web.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Web Development</h5>
+    <p class="card-text">Learn how to create a awesome Website.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/ML.png' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Machine Learning</h5>
+    <p class="card-text">Learn Machine Learning and take the first step towards AI.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+
+
+         <div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Dm.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Digital Marketing</h5>
+    <p class="card-text">Learn SEO, Search Engine Marketing, Web Analytics.</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+ </div>
+
+
+<div class="col-sm-12 col-md-6 col-lg-3"> 
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Gd.jpg' %}" alt="Card image cap" style="height: 180px;">
+  <div class="card-body">
+    <h5 class="card-title">Graphic Design</h5>
+    <p class="card-text">Design Stunning graphics using Adobe Photoshop.</p>
+    <a href="https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe" class="btn btn-primary">Know More</a>
+  </div>
+</div>
+</div>
+
+
+      </div>
+
+      <br>
+
+      <div style="background-color:#F5F5F5">
+
+      <hr>
+      <br>
+
+
+
+
+      <center><h2 style="font-size: 20px;color: #79d279">MAXIMIZE YOUR POTENTIALS</h2></center>
+              <center><h2>Learn the secrets to Life Success</h2></center>
+               <center><h2 class="a">The ultimate planning solution for Students who want to reach their goals</h2></center>
+
+               <br>
+               <br>
+
+
+
+               <div class="row" style="margin-left: 10px;">
+                  <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-text">
+                        <h4>Expert Teacher</h4>
+                        <p>Develop skills for career of various majors including computer</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-text">
+                        <h4>Self Developemnt</h4>
+                        <p>Develop skills for career of various majors including computer</p>
+                    </div>
+                </div>
+            </div>
+                  
+
+
+ <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-text">
+                        <h4>Remote Learning</h4>
+                        <p>Develop skills for career of various majors including computer</p>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-text">
+                        <h4>Life Time Support</h4>
+                        <p>Develop skills for career of various majors including computer</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+               </div>
+         
+
+
+               <br>
+               <br>
+
+               <hr>
+            </div>
+
+               <br>
+
+            <br>
+
+<div class="row">
+  <div class="column" style="margin-left: 40px;">
+    <img src="{% static 'img/scroll.jpg' %}" alt="Snow" style="width:100%">
+  </div>
+  <div class="column" style="margin-left: 80px;">
+   
+       <ul style="font-family:optima;">
+            <li><h4>8 total hours on demand video</h4></li>
+            <br>
+           <li><h4>Support Files</h4></li>
+           <br>
+           <li><h4>100% Online</h4></li>
+          <br>
+        <li> <h4>Full Life Time Access</h4></li>
+          <br>
+         <li><h4>Access on Mobile,Dsektop,TV</h4></li>
+          <br>
+         <li><h4>Flexible Deadlines</h4></li>
+          <br>
+         <li><h4></i>Certificate of Completion</h4></li>
+      </ul>
+            
+         </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+
+<center><h2>Our Popular Projects</h2></center>
+               <center><h2 class="a">The ultimate planning solution for Students who want to reach their goals</h2></center>
+<br>
+<br>
+
+
+
+<div class="row" style="margin-left: 100px;">
+
+
+  <div class="col1">
+    <a href = "#" target = "_self"> 
+         <img src="{% static 'img/Web1.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Web Development</div>
+  </div>
+
+
+  <div class="col1">
+     <a href = "#" target = "_self"> 
+         <img src="{% static 'img/VA.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Vistual Assistant</div>
+  </div>
+  <div class="col1">
+     <a href = "#" target = "_self"> 
+         <img src="{% static 'img/photo.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Photography</div>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+<div class="row"  style="margin-left: 100px;">
+   
+   <div class="col1">
+          <a href = "https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe" target = "https://www.youtube.com/watch?v=bPrmA1SEN2k&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe"> 
+         <img src="{% static 'img/cs.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Cyber Security</div>
+   </div>
+
+
+
+  <div class="col1">
+     <a href = "#" target = "_self"> 
+         <img src="{% static 'img/robo.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Robotics</div>
+  </div>
+
+  
+  <div class="col1">
+     <a href = "#" target = "_self"> 
+         <img src="{% static 'img/app.jpg' %}" alt="Snow" border="0" style="width:100%"></a>
+        <div style="font-weight: bold; font-size: 20px;">Android App Development</div>
+  </div>
+</div>
+<br>
+
+
+  <div class="gfg" style="background-color:#F5F5F5">
+        <img src="{% static 'img/bg.jpg' %}" style="width: 100%; height:400px;">
+       <h3 class="first-txt">
+             Lets Get Started </h3> <br>
+             <br>
+   <h3 class="second-txt">The ultimate planning solution for Students who want to reach their goals</h3>
+               <br>
+               <br>
+               
+         <h3 class="third-txt"><a href="{% url 'main:Course' %}" class="btn btn-primary">Access Now</a></h3>
+
+          
+          </div>
+
+
+
+<div style="background-color:#F5F5F5;">
+      <footer id="footer"> 
+    <div class="container">
+      <div class="row row-pb-md">
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>E-Learning</h4>
+         <p>
+            <a href="#"  style="color: #5D6D7E;">Course</a><br>   
+            <a href="#" style="color: #5D6D7E;">Blog</a><br>
+            <a href="#" style="color: #5D6D7E;">Contact</a><br>
+            <a href="#" style="color: #5D6D7E;">Social Media</a><br>
+            <a href="#" style="color: #5D6D7E;">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Useful Links</h4>
+         
+            <a href="#" style="color: #5D6D7E;">Held Desk</a>
+            <a href="#" style="color: #5D6D7E;">Facilities</a>
+            <a href="#" style="color: #5D6D7E;">Testimonials</a><br>
+            <a href="#" style="color: #5D6D7E;">Student Support</a>
+            <a href="#" style="color: #5D6D7E;">Terms &amp; Conditions</a>
+          
+        </div>
+        <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Our Course</h4>
+          
+            <a href="#" style="color: #5D6D7E;">Machine Learning</a><br>
+            <a href="#" style="color: #5D6D7E;">Marketing</a><br>
+            <a href="#" style="color: #5D6D7E;">Visual Assistant</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">Web Development</a>
+          
+        </div>
+         <div class="col-md-2 col-sm-4 footer-widget">
+          <h4>Projects</h4>
+          
+             <a href="#" style="color: #5D6D7E;">Photography</a>  <br>           
+            <a href="#" style="color: #5D6D7E;">Virtual Assistance</a><br>
+            <a href="#" style="color: #5D6D7E;">Robotics</a><br>
+            <a href="#" style="color: #5D6D7E;">Cyber Security</a><br>
+            <a href="#" style="color: #5D6D7E;">App Development</a>
+          
+        </div>
+       
+        <div class="col-md-3 col-sm-4 footer-widget">
+          <h4>Contact Info</h4>
+          <p>Ahmeadabad Gujarat-382330</p>
+          <p>+91 9723815269</p>
+          <p>E-mail: <a href="mailto:maheshrathod447@gmail.com" style="color: #5D6D7E;">maheshrathod447@gmail.com</a></p>
+        </div>
+      </div>
+      <br>
+
+      <div class="footer-widget" style=" margin-left: 45%;">
+                           
+                                    <a href="#" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i> </a>
+                              
+                                
+                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                
+                                
+                                    <a href="#" target="_blank"> <i class="fab fa-linkedin"></i></i> </a>
+                        </div>
+
+                        <br>
+
+                        <hr>
+                        <br>
+
+             <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                       <p>© Copyright © 2021 Yourdomian. All rights reserved.</p>
+                    </div>
+                    </div>
+                    <br>
+
+
+
+                        
+
+
+
+
+      </div>
+   </div>
+</footer>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+   </body>
+</html>
